@@ -8,6 +8,8 @@ export default class ParentComponent extends Component {
 
     //we are really in a *bind* here.... :)
     //fix it...
+    this.handleInput = this.handleInput.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
 
     //state lives here
     this.state = {
@@ -37,8 +39,8 @@ export default class ParentComponent extends Component {
           <input onChange={this.handleInput} type="text" placeholder="Say It, Don't Spray It!" />
         </div>
         <div>
-          <ChildComponent onClick={"FILL_ME_IN"}/>
-          <DisplayComponent sayWhat={"FILL_ME_IN"} />
+          <ChildComponent onClick={this.state.whatToSay}/>
+          <DisplayComponent sayWhat={this.state.whatWasSaid} />
         </div>
       </div>
     );

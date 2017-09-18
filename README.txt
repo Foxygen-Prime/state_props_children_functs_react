@@ -13,9 +13,9 @@ In order to get familiar with props, state, passing props to children, and rende
 
 You will need to execute a few major changes to the App.js file to get everything working properly.
 
-The BaseLayout component should house the Header and Footer components as well as make room for any child components that would be rendered in between.
+-The BaseLayout component should house the Header and Footer components as well as make room for any child components that would be rendered in between.
 
-The ParentComponent has a lot of the functionality worked out for you, but you will need to make it run properly. Namely in the constructor method and the render method where we pass props down.
+-The ParentComponent has a lot of the functionality worked out for you, but you will need to make it run properly. Namely in the constructor method and the render method where we pass props down.
 
 After everything is working properly, you will need to move each of the components (except for the App component) into their own separate file within src/components and import and export them properly to make the application still run.
 
